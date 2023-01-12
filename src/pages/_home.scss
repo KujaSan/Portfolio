@@ -1,0 +1,14 @@
+.home{
+    @include container-fixing;
+    &__avatar{
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        box-shadow: 4px 4px 3px rgb(0 0 0 / 30%);
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,60 @@
+.burger{
+    display: flex;
+    flex-direction: row-reverse;
+    &__button{
+        height: 36px;
+        width: 36px;
+        font-size: 36px;
+        color:$lightBrownColor;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__menu{
+        text-overflow: clip;
+        overflow: hidden;
+        z-index: 2;
+        background-color: $purpleColor;
+        position: absolute;
+        top: 100px;
+        height: 70%;
+        width: 75px;
+        margin: 0 -20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        animation: sliding 500ms ease-out;
+        &__text{
+            width: max-content;
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+            text-transform: uppercase;
+        }
+        @media screen and (min-width: 1240px){
+            &__text{
+                font-size: 18px;
+                text-transform: none;
+            }
+        }
+    }
+    &__menu.out{
+        width: 0px;
+        animation: sliding 500ms ease-out alternate-reverse;
+    }
+}
+
+@keyframes sliding{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 75px;
+    }
+}

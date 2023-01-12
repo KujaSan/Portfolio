@@ -1,0 +1,57 @@
+.slideshow{
+    width: 355px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__arrows{
+        color: white;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 35px;
+        width: 85%;
+        z-index: 1;
+        &__item{
+            cursor: pointer;
+            font-size: 20px;
+            color: $darkBrownColor;
+        }
+    }
+    &__text{
+        display: none;
+    }
+    &__slide{
+        width: 90%;
+        height: 255px;
+        margin: 0 auto 20px auto;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 10px;
+        object-fit: cover;
+        border: solid 2px $darkBrownColor;
+    }
+    @media screen and (min-width: 1240px){
+        width: 1240px;
+        &__arrows{
+            width: 90%;
+            &__item{
+                font-size: 80px;
+            }
+        }
+        &__text{
+            text-align: center;
+            position: absolute;
+            z-index: 10;
+            bottom: 30px;
+            width: 100%;
+            color: $darkBrownColor;
+            display: block;
+        }
+        &__slide{
+            Width: 1240px;
+            Height: 415px;
+            border-radius: 25px;
+        }
+    }
+}

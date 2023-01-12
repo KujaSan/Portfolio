@@ -1,0 +1,18 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+@import "../base/base";
+@import "../base/typography";
+
+
+
+@import "../layouts/header";
+@import "../layouts/footer";
+
+@import "../pages/Error";
+@import "../pages/home";
+@import "../pages/about";
+@import "../pages/portfolio";
+
+@import "../components/burgerMenu";
+@import "../components/slideshow";
