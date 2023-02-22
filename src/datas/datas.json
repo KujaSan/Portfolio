@@ -3,12 +3,14 @@
 		"id": "Booki",
 		"cover": "https://drive.google.com/uc?id=1IRTUHb5jUQYm2l5712b1A9ih79R4ccJ9",
 		"pictures": [
+            "https://drive.google.com/uc?id=1IRTUHb5jUQYm2l5712b1A9ih79R4ccJ9"
 		],
-		"description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+		"description": "Un site web en HTML et CSS réalisé dans le cadre de ma formation",
 		"tags": [
 			"HTML",
 			"CSS"
-		]
+		],
+        "repo": "https://github.com/KujaSan/Booki"
 	},
     {
         "id":"OhmyFood",

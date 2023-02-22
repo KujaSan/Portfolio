@@ -1,9 +1,12 @@
-import banner from '../assets/web-design-banner.jpg';
-function Card(){
+import { Link } from "react-router-dom";
+
+function Card(props){
     return(
         <div className="cardlocker__card">
-            <img className='cardlocker__card__img' src={banner} alt="Ma petite banniere"></img>
-            <p className='cardlocker__card__title'>ici un petit paragraphe</p>
+            <Link to={`/Portfolio?id=${props.id}`}>
+                <img className='cardlocker__card__img' src={props.cover} alt="Ma petite banniere"></img>
+                <p className='cardlocker__card__title'>{props.id}</p>
+            </Link>
         </div>
     )
 }

@@ -1,3 +1,27 @@
 .portfolio{
     @include container-fixing;
+    &__slide{
+        width: 90%;
+        margin: 20px;
+        border: $medBrownColor 5px solid;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 30%);
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        &__description{
+            width: 60%;
+            text-align: left;
+        }
+        &__link{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__icon{
+                margin: 10px;
+            }
+        }
+    }
 }
