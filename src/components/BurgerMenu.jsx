@@ -12,7 +12,7 @@ function Burger(){
     };
     //declaration des textes
     const acceuil = 'Accueil';
-    const propos = 'A Propos';
+    const propos = 'Contact';
     // Style à appliquer au lien actif
     let activeStyle = {
         textDecoration: "underline",
@@ -35,7 +35,7 @@ function Burger(){
                         {acceuil}
                     </NavLink>
                 
-                    <NavLink to="/About" style={({ isActive }) =>isActive ? activeStyle : undefined} className='burger__menu__text'>
+                    <NavLink to="/Contact" style={({ isActive }) =>isActive ? activeStyle : undefined} className='burger__menu__text'>
                         {propos}
                     </NavLink>
                 </nav>

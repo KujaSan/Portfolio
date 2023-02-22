@@ -1,0 +1,38 @@
+.contact{
+    @include container-fixing;
+    justify-content: center;
+    &__avatar{
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        box-shadow: 4px 4px 3px rgb(0 0 0 / 30%);
+        margin: 20px;
+        border: 5px $medBrownColor solid;
+        border-radius: 100px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &__item{
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        &__button{
+            background-color: $darkBrownColor;
+            color: $lightBrownColor;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+}
