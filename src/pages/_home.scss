@@ -1,10 +1,9 @@
 .home{
     @include container-fixing;
-    &__avatar{
+    &__banner{
         object-fit: cover;
         height: 200px;
-        width: 200px;
-        border-radius: 100px;
+        width: 80%;
         box-shadow: 4px 4px 3px rgb(0 0 0 / 30%);
     }
     &__text{
