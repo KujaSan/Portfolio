@@ -27,9 +27,13 @@ function Portfolio(){
             <img className="portfolio__slide" src={projetItem.pictures} alt={projetItem.description}></img>
             <div className="portfolio__container">
                 <p className="portfolio__container__description">{projetItem.description}</p>
+                <ul className="portfolio__container__tagblock"> {projetItem.tags.map((stuff)=>(
+                        <li className="portfolio__container__tagblock__tag" key={stuff}>{stuff}</li>
+                ))}</ul>
                 <Link className="portfolio__container__link" to={projetItem.repo}>
                     <p>lien vers le repo gitHub</p><FontAwesomeIcon className="portfolio__container__link__icon" icon={faLink} />
                 </Link>
+                
             </div>
         </div>
     )

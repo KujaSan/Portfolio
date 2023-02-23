@@ -1,11 +1,11 @@
 [
     {
 		"id": "Booki",
-		"cover": "https://drive.google.com/uc?id=1IRTUHb5jUQYm2l5712b1A9ih79R4ccJ9",
+		"cover": "../pictures/Booki.png",
 		"pictures": [
-            "https://drive.google.com/uc?id=1IRTUHb5jUQYm2l5712b1A9ih79R4ccJ9"
+            "../pictures/Booki.png"
 		],
-		"description": "Un site web en HTML et CSS réalisé dans le cadre de ma formation",
+		"description": "Intégration d'une maquette en HTML et CSS réalisé dans le cadre de ma formation",
 		"tags": [
 			"HTML",
 			"CSS"
@@ -14,23 +14,50 @@
 	},
     {
         "id":"OhmyFood",
-        "cover": "https://drive.google.com/uc?id=1l448hPty8gP-FoUiESBudK0qBmhnZz5Z",
+        "cover": "../pictures/Ohmyfood.png",
         "pictures":[
+            "../pictures/Ohmyfood.png"
         ],
         "tags":[
             "HTML",
-            "Sass"
+            "Sass",
+            "Keyframes"
         ]
     },
     {
         "id":"La panthere",
-        "cover": "https://drive.google.com/uc?id=18G_hWFwik8J7OVKUOvz_lQmYjurtKzcw",
+        "cover": "../pictures/La-panthere.png",
         "pictures":[
+            "../pictures/La-panthere.png"
         ],
         "tags":[
             "HTML",
             "CSS",
             "SEO"
+        ]
+    },
+    {
+        "id":"Kanap",
+        "cover": "../pictures/Kanap.png",
+        "pictures":[
+            "../pictures/Kanap.png"
+        ],
+        "tags":[
+            "Javascript",
+            "API",
+            "E-commerce"
+        ]
+    },
+    {
+        "id":"Piiquante",
+        "cover": "../pictures/Piiquante.png",
+        "pictures":[
+            "../pictures/Piiquante.png"
+        ],
+        "tags":[
+            "MongoDB",
+            "Express",
+            "Node.js"
         ]
     }
 ]

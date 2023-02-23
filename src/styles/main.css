@@ -213,21 +213,48 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .portfolio__container {
+  background-color: #3B301B;
+  width: 100%;
+  padding: 20px 0;
   display: flex;
-  flex-direction: column;
-  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .portfolio__container__description {
-  width: 60%;
+  background-color: #FACD73;
+  color: #7A6438;
+  padding: 10px;
+  width: 50%;
   text-align: left;
+  border: #7A6438 5px solid;
+  border-radius: 20px;
 }
 .portfolio__container__link {
+  background-color: #FACD73;
+  color: #7A6438;
+  padding: 10px;
+  width: 70%;
+  border: #7A6438 5px solid;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .portfolio__container__link__icon {
   margin: 10px;
+}
+.portfolio__container__tagblock {
+  background-color: #FACD73;
+  color: #7A6438;
+  padding: 10px;
+  width: 25%;
+  border: #7A6438 5px solid;
+  border-radius: 20px;
+}
+.portfolio__container__tagblock__tag {
+  list-style: none;
 }
 
 .burger {

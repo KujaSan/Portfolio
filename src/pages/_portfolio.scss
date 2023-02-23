@@ -8,20 +8,47 @@
         box-shadow: 0px 4px 4px rgb(0 0 0 / 30%);
     }
     &__container{
+        background-color: $darkBrownColor;
+        width: 100%;
+        padding: 20px 0;
         display: flex;
-        flex-direction: column;
-        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
         &__description{
-            width: 60%;
+            background-color: $lightBrownColor ;
+            color: $medBrownColor;
+            padding: 10px;
+            width: 50%;
             text-align: left;
+            border: #7A6438 5px solid;
+            border-radius: 20px;
         }
         &__link{
+            background-color: $lightBrownColor ;
+            color: $medBrownColor;
+            padding: 10px;
+            width: 70%;
+            border: #7A6438 5px solid;
+            border-radius: 20px;
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
             &__icon{
                 margin: 10px;
             }
         }
+    &__tagblock{
+        background-color: $lightBrownColor ;
+        color: $medBrownColor;
+        padding: 10px;
+        width: 25%;
+        border: #7A6438 5px solid;
+        border-radius: 20px;
+        &__tag{
+            list-style: none;
+        }
+    }
     }
 }
