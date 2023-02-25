@@ -22,7 +22,8 @@
             "HTML",
             "Sass",
             "Keyframes"
-        ]
+        ],
+        "repo": "https://github.com/KujaSan/Ohmyfood"
     },
     {
         "id":"La panthere",
@@ -31,10 +32,11 @@
             "../pictures/La-panthere.png"
         ],
         "tags":[
-            "HTML",
-            "CSS",
+            "Audits",
+            "Performances",
             "SEO"
-        ]
+        ],
+        "repo": "https://github.com/KujaSan/La-panthere"
     },
     {
         "id":"Kanap",
@@ -46,7 +48,8 @@
             "Javascript",
             "API",
             "E-commerce"
-        ]
+        ],
+        "repo": "https://github.com/KujaSan/Kanap"
     },
     {
         "id":"Piiquante",
@@ -58,6 +61,20 @@
             "MongoDB",
             "Express",
             "Node.js"
-        ]
+        ],
+        "repo": "https://github.com/KujaSan/Piiquante"
+    },
+    {
+        "id":"Kasa",
+        "cover": "../pictures/Kasa.png",
+        "pictures":[
+            "../pictures/Kasa.png"
+        ],
+        "tags":[
+            "React",
+            "React-router",
+            "Sass"
+        ],
+        "repo": "https://github.com/KujaSan/kasa"
     }
 ]

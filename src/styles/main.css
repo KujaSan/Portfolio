@@ -207,7 +207,7 @@ textarea {
 }
 .portfolio__slide {
   width: 90%;
-  margin: 20px;
+  margin: 40px auto;
   border: #7A6438 5px solid;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
@@ -217,44 +217,76 @@ textarea {
   width: 100%;
   padding: 20px 0;
   display: flex;
+  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-around;
   justify-content: space-around;
 }
 .portfolio__container__description {
   background-color: #FACD73;
-  color: #7A6438;
+  color: #3B301B;
   padding: 10px;
-  width: 50%;
+  width: 80%;
   text-align: left;
   border: #7A6438 5px solid;
   border-radius: 20px;
 }
-.portfolio__container__link {
+.portfolio__container__sider {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolio__container__sider__link {
   background-color: #FACD73;
-  color: #7A6438;
+  color: #3B301B;
   padding: 10px;
-  width: 70%;
+  margin: 16px 0;
+  width: 40%;
+  text-align: start;
   border: #7A6438 5px solid;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
-.portfolio__container__link__icon {
-  margin: 10px;
-}
-.portfolio__container__tagblock {
+.portfolio__container__sider__tagblock {
   background-color: #FACD73;
-  color: #7A6438;
+  color: #3B301B;
   padding: 10px;
-  width: 25%;
+  width: 40%;
   border: #7A6438 5px solid;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-.portfolio__container__tagblock__tag {
+.portfolio__container__sider__tagblock__tag {
   list-style: none;
+}
+.portfolio__container__sider__tagblock__tag__icon {
+  margin: 0 15px;
+}
+@media screen and (min-width: 992px) {
+  .portfolio__slide {
+    width: 60%;
+  }
+  .portfolio__container__description {
+    width: 60%;
+  }
+  .portfolio__container__sider {
+    width: 15%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .portfolio__container__sider__tagblock {
+    width: 100%;
+  }
+  .portfolio__container__sider__link {
+    width: 100%;
+  }
 }
 
 .burger {
@@ -282,6 +314,7 @@ textarea {
   top: 100px;
   height: max-content;
   width: 64px;
+  height: 64px;
   margin: 0 -20px;
   padding: 20px;
   border-radius: 0 0 0 50px;
@@ -314,8 +347,10 @@ textarea {
 @keyframes sliding {
   0% {
     width: 0px;
+    height: 0px;
   }
   100% {
+    height: 64px;
     width: 64px;
   }
 }
@@ -382,15 +417,17 @@ textarea {
 .cardlocker {
   background-color: #7A6438;
   width: 100%;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .cardlocker__card:hover {
   transform: scale(1.05);
 }
 .cardlocker__card {
-  margin: 20px;
+  margin: 20px 0;
   width: 80%;
   height: 200px;
   position: relative;
@@ -421,6 +458,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .cardlocker__card {
     width: 30%;
