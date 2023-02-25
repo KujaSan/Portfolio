@@ -45,7 +45,7 @@ const Slideshow = ({ props }) => {
                     {index === current 
                         && <div>
                             <p className="slideshow__text">{index + 1} / {props.length}</p>
-                            <img className="slideshow__slide" src={slide.cover} alt=""></img>
+                            <img className="slideshow__slide" src={slide} alt=""></img>
                         </div>
                     }
                 </div>

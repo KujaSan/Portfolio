@@ -5,6 +5,7 @@ import { faStar, faLink } from "@fortawesome/free-solid-svg-icons";
 import data from '../datas/datas.json';
 
 import Error from "../pages/Error";
+import Slideshow from "../components/Slideshow";
 /**
   * Composant de la page du portfolio.
   *
@@ -24,16 +25,18 @@ function Portfolio(){
     }
     return (
         <div className="portfolio">
-            <img className="portfolio__slide" src={projetItem.pictures} alt={projetItem.description}></img>
+            <Slideshow props={projetItem.pictures}/>
             <div className="portfolio__container">
-                <p className="portfolio__container__description">{projetItem.description}</p>
-                <div className="portfolio__container__sider">
-                    <ul className="portfolio__container__sider__tagblock"> {projetItem.tags.map((stuff)=>(
-                            <li className="portfolio__container__sider__tagblock__tag" key={stuff}><FontAwesomeIcon icon={faStar} className="portfolio__container__sider__tagblock__tag__icon"/>{stuff}</li>
-                    ))}</ul>
-                    <Link className="portfolio__container__sider__link" to={projetItem.repo}>
-                    <FontAwesomeIcon icon={faLink} className="portfolio__container__sider__tagblock__tag__icon"/><p>lien vers le repo gitHub</p>
-                    </Link>
+                <div className="portfolio__container__textblock">
+                    <p className="portfolio__container__textblock__description">{projetItem.description}</p>
+                    <div className="portfolio__container__textblock__sider">
+                        <ul className="portfolio__container__textblock__sider__tagblock"> {projetItem.tags.map((stuff)=>(
+                                <li className="portfolio__container__textblock__sider__tagblock__tag" key={stuff}><FontAwesomeIcon icon={faStar} className="portfolio__container__sider__tagblock__tag__icon"/>{stuff}</li>
+                        ))}</ul>
+                        <Link className="portfolio__container__textblock__sider__link" to={projetItem.repo}>
+                        <FontAwesomeIcon icon={faLink} className="portfolio__container__textblock__sider__tagblock__tag__icon"/><p>Repo gitHub</p>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

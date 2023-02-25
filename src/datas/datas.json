@@ -3,7 +3,8 @@
 		"id": "Booki",
 		"cover": "../pictures/Booki.png",
 		"pictures": [
-            "../pictures/Booki.png"
+            "../pictures/Booki.png",
+            "../pictures/Booki2.png"
 		],
 		"description": "Intégration d'une maquette en HTML et CSS réalisé dans le cadre de ma formation",
 		"tags": [

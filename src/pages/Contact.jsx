@@ -11,9 +11,13 @@ function Contact(){
         <div className="contact">
             <img className='contact__avatar' src={avatar} alt="Mon petit avatar"></img>
             <form className="contact__form">
-                <label for="name">Nom:</label>
-                <input className="contact__form__item" id="name" type="text" name="name" />
+                <div className='contact__form__names'>
+                    <label for="lastname">Nom:</label>
+                    <input className="contact__form__names__item" id="lastname" type="text" name="lastname" />
 
+                    <label for="firstname">Prénom:</label>
+                    <input className="contact__form__names__item" id="firstname" type="text" name="firstname" />
+                </div>
                 <label for="email">Email:</label>
                 <input className="contact__form__item" id="email" type="email" name="email"/>
 

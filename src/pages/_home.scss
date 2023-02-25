@@ -1,13 +1,35 @@
 .home{
     @include container-fixing;
     &__banner{
-        object-fit: cover;
-        height: 200px;
-        width: 80%;
-        box-shadow: 4px 4px 3px rgb(0 0 0 / 30%);
-    }
-    &__text{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        &__hello{
+            &__avatar{
+                margin-top: 30px;
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 3px rgb(0 0 0 / 30%);
+            }
+            &__text{
+            display: flex;
+            flex-direction: column;
+            }
+        }
+        &__description{
+            width: 80%;
+        }
+        @media screen and (min-width: 992px){
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            justify-content: space-around;
+            &__description{
+                width: 50%;
+            }
+        }
     }
+    
 }
